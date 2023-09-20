@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int c,x,y;
+	cin>>c;
+	while(c--){
+	    cin>>x;
+	    cin>>y;
+	    if((x-y)>0){
+	        cout<<x-y<<endl;
+	        
+	    }
+	    else
+	    {
+	        cout<<0<<endl;
+	    }
+	}
+	return 0;
+}
