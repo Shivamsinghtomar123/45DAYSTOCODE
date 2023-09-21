@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int l,v1,v2,k,m;
+	    cin>>l;
+	    cin>>v1>>v2;
+	    
+	    
+	    if((l%v1)!=0){
+	       k=(l/v1)+1;
+	    }
+	    else k=l/v1;
+	    if((l%v2)!=0){
+	        m=(l/v2)+1;
+	    }
+	    else m=l/v2;
+	    cout<<k-(m+1)<<endl;
+	}
+	return 0;
+}
