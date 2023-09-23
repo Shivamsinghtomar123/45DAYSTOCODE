@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+	while(t--){
+	    string str;
+	    int size;
+	    int k=0;
+	    cin>>size>>str;
+	    
+	        for(int i=0; i<size;i++){
+	            if(str[i]=='0'||str[i]=='5'){
+	                k++;
+	               
+	               
+	            }
+	        }
+	        if(k>=1)cout<<"yes"<<endl;
+       else cout<<"No"<<endl;
+	    
+	    }
+	    
+	
+	return 0;
+}
