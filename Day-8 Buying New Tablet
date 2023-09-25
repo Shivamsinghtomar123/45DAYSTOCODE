@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	   int n,b,h,w,p,temp=0,temp2=0,flag=0;
+	   cin>>n;
+	   cin>>b;
+	   for(int i=0;i<n;i++){
+	       cin>>h>>w>>p;
+	       if(p<=b){
+	           if(h*w>temp*temp2){
+	               flag=1;
+	       temp=h;temp2=w;
+	           }
+	       }
+	       
+	   }
+	   if(flag==1)
+	   cout<<temp*temp2<<endl;
+	   else cout<<"no tablet"<<endl;
+	   
+	    
+	}
+	return 0;
+}
