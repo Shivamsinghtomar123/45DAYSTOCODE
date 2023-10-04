@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,p1=0,p2=0,count=0,count2=0;
+	    cin>>n;
+	    int arr[n];
+	    for(int i=0;i<n;i++){
+	        cin>>arr[i];
+	        if(arr[i]>0){
+	            count++;
+	            p1=max(p1,count);
+	        }
+	        else{
+	            count=0;
+	            
+	        }
+	        
+	    }
+	    for(int j=0;j<n;j++){
+	        cin>>arr[j];
+	        if(arr[j]>0){
+	            count2++;
+	            p2=max(p2,count2);
+	        }
+	         else{
+	            count2=0;
+	            
+	        }
+	        
+	    }
+	    if(p1>p2)cout<<"Om"<<endl;
+	    else if(p1<p2)cout<<"Addy"<<endl;
+	    else cout<<"Draw"<<endl;
+	    
+	}
+	return 0;
+}
