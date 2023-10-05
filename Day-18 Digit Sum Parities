@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,nine=0;
+	    cin>>n;
+	    int m=n;
+	    while(n%10==9)
+	    {
+	        nine++;
+	        n=n/10;
+	    }
+	    if(nine%2==1) cout<<m+2<<endl;
+	    else cout<<m+1<<endl;
+	}
+	return 0;
+}
